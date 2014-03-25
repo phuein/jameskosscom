@@ -32,12 +32,16 @@ document.write('<b>'+posttitle+'</b><br>');
 if (showpostsummary == true) {
 
       if (postcontent.length < numchars) {
+         document.write('<span>');
          document.write(postcontent);
+         document.write('</span>');
       else {
+         document.write('<span>');
          postcontent = postcontent.substring(0, numchars);
          var quoteEnd = postcontent.lastIndexOf(" ");
          postcontent = postcontent.substring(0,quoteEnd);
          document.write(postcontent + '...');
+         document.write('</span>');
 }
 
 var towrite='';var flag=0;

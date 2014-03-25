@@ -1,6 +1,7 @@
-function showrecentpostswiththumbs(json) {document.write('<ul class="recent_posts_with_thumbs">'); for (var i = 0; i < numposts; i++) {var entry = json.feed.entry[i];var posttitle = entry.title.$t;var posturl;if (i == json.feed.entry.length) break;for (var k = 0; k < entry.link.length;k++){
+function showrecentpostswiththumbs(json) {document.write('<ul class="recent_posts_with_thumbs">'); for (var i = 0; i < numposts; i++) {var entry = json.feed.entry[i];var posttitle = entry.title.$t;var posturl; var namelink = ''; if (i == json.feed.entry.length) break;for (var k = 0; k < entry.link.length;k++){
 if(entry.link[k].rel=='replies'&&entry.link[k].type=='text/html'){var commenttext=entry.link[k].title;var commenturl=entry.link[k].href; commenturl=commenturl.replace('#comment-form', '#comments')}
-if (entry.link[k].rel == 'alternate') {posturl = entry.link[k].href;break;}}var thumburl;try {thumburl=entry.media$thumbnail.url;}catch (error)
+if(entry.link[k].rel=='self'){namelink = entry.link[k].href; namelink = namelink.split('/'); namelink = namelink[namelink.length-1]; namelink = '#' + namelink;}
+if (entry.link[k].rel == 'alternate') {posturl = entry.link[k].href + namelink;break;}}var thumburl;try {thumburl=entry.media$thumbnail.url;}catch (error)
 
 
 {

@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>James Koss</title>
+    <meta name="description" content="An introduction to James Koss.">
+    <meta name="author" content="James Koss">
+    
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    
+    <style>
+    body {
+        user-select: none;
+    }
+    
+    #center {
+        display: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: monospace;
+    }
+    
+    .title {
+        font-size: 150%;
+        margin-bottom: 1em;
+    }
+    
+    .item {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    /* Extra spacing for grouped items. */
+    .group {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .item_sub_title {
+        font-size: 110%;
+    }
+    
+    .item_sub {
+        margin-top: 0.5em;
+    }
+    
+    #center a:hover::before { 
+        content: '>';
+        position: absolute;
+        left: -2em;
+    }
+    
+    #email {
+        margin-top: 2em;
+        font-size: 90%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id='center'>
+      <div class='title'>James Koss</div>
+
+      <div class='item group'>
+        <span class='item_sub_title'>GitHub Repositories</span>
+        <div class='item_sub item_hover'><a href='https://github.com/phuein/UserScripts'>User Scripts</a></div>
+        <div class='item_sub item_hover'><a href='https://github.com/phuein?tab=repositories'>All Repositories</a></div>
+      </div>
+
+      <div class='item item_hover'><a href='https://www.esoui.com/downloads/author-38690.html'>ESOUI Addons &amp; Support</a></div>
+      <div class='item item_hover'><a href='https://stackoverflow.com/users/2692437/james-koss'>Stackoverflow Activity</a></div>
+
+      <div class='item group'>
+        <span class='item_sub_title'>Greasyfork Scripts</span>
+        <div class='item_sub item_hover'><a href='https://greasyfork.org/en/scripts/27189-facebook-notifications-highlighter'>Facebook Notifications Highlighter</a></div>
+        <div class='item_sub item_hover'><a href='https://greasyfork.org/en/users/80816-james-koss'>All Scripts</a></div>
+      </div>
+
+      <div class='item group'>
+        <span class='item_sub_title'>Reddit Guides</span>
+        <div class='item_sub item_hover'><a href='https://www.reddit.com/r/elderscrollsonline/comments/bft011/bethesda_launcher_auto_killer/'>ESO Launcher Cleaner</a></div>
+        <div class='item_sub item_hover'><a href='https://www.reddit.com/r/RetroArch/comments/baximw/little_py_script_to_start_ra_by_controller/'>Controller Starts RetroArch</a></div>
+        <div class='item_sub item_hover'><a href='https://www.reddit.com/r/homesecurity/comments/9nwxwn/my_logitech_c615_ispy_task_scheduler_setup/'>Home Security System With Webcam</a></div>
+      </div>
+
+      <div class='item item_hover'><a href='https://userstyles.org/users/300931'>Stylish CSS Scripts</a></div>
+      <div class='item item_hover'><a href='https://gallery.jameskoss.com'>3D Gallery</a></div>
+
+      <div class='item item_hover'><a href='https://blog.jameskoss.com'>Adventure Blog</a></div>
+      <div class='item item_hover'><a href='https://www.deviantart.com/phuein/'>DeviantArt Contributions</a></div>
+      <div class='item item_hover'><a href='https://www.reverbnation.com/phuein'>Reverbnation Recordings</a></div>
+      <div class='item item_hover'><a href='https://librivox.org/reader/9105'>Librivox Readings</a></div>
+      <div class='item item_hover'><a href='https://yt.jameskoss.com'>YouTube Channel</a></div>
+
+      <div class='item_hover' id='email'><a href='mailto:phuein@gmail.com'>phuein@gmail.com</a></div>
+    </div>
+
+    <script>
+    // Open links in a new tab.
+    $('#center a').attr('target', '_blank');
+    </script>
+</body>
+
+</html>

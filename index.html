@@ -119,6 +119,11 @@
     </div>
 
     <script>
+    // Remove FB query from URL.
+    if ( location.search.includes('fbclid') ) {
+        window.history.pushState({}, document.title, window.location.pathname)
+    }
+
     // Open links in a new tab.
     $('#center a').attr('target', '_blank');
     </script>

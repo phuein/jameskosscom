@@ -1,4 +1,4 @@
-RewriteEngine on
+RewriteEngine On
 
 RewriteCond %{QUERY_STRING} ^(.*)&?fbclid=[^&]+&?(.*)$ [NC]
 RewriteRule ^/?(.*)$ /%1?%1%2 [QSD, R=301,L]

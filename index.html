@@ -119,7 +119,7 @@
     </div>
 
     <script>
-    // Remove FB query from URL.
+    // Remove query from URL if FB injected theirs.
     if ( location.search.includes('fbclid') ) {
         window.history.pushState({}, document.title, window.location.pathname)
     }

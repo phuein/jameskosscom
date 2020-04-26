@@ -1,9 +1,27 @@
 @media only screen and (min-width: 600px) {
     #center {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #center {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    #center {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
@@ -50,5 +68,6 @@ body {
 
 #email {
     margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 90%;
 }

@@ -48,7 +48,7 @@ body {
 }
 
 .title {
-    font-size: 150%;
+    font-size: 200%;
     margin-bottom: 1em;
 }
 
@@ -59,8 +59,8 @@ body {
 
 /* Extra spacing for grouped items. */
 .group {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .item_sub_title {

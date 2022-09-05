@@ -38,7 +38,7 @@ and (max-height: 400px) {
 
 body {
     user-select: none;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #0d0d0d;
     color: hsl(210deg 34% 71%);
 }
@@ -52,6 +52,7 @@ body {
 .title {
     font-size: 200%;
     margin-bottom: 1em;
+    user-select: text;
 }
 
 .item {
@@ -75,10 +76,13 @@ body {
 
 #center a {
     color: hsl(210, 20%, 92%);
+    text-underline-offset: 4px;
+    text-decoration: none;
 }
 
 #center a:hover {
-    color: hsl(210, 50%, 72%);
+    color: hsl(208, 31%, 81%);
+    text-decoration: revert;
 }
 
 #center a:hover::before {
@@ -88,7 +92,23 @@ body {
 }
 
 #email {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    user-select: text;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#email a {
+    color: hsl(208, 98%, 83%);
     font-size: 90%;
+    transition: all 1.6s;
+}
+
+#email a:hover {
+    text-decoration: none;
+    transition: all 0.8s;
+    font-size: 125%;
+}
+
+#email a:hover::before {
+    content: '';
 }

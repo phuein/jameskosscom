@@ -1,67 +1,81 @@
 <!doctype html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    
     <title>James Koss</title>
-
+    
     <meta name="description" content="An introduction to James Koss.">
-
+    
     <meta name="author" content="James Koss">
-
+    
     <meta name="keywords" content="developer python james koss jameskoss author
     voiceover 3d graphics programming code coding entrepreneur innovation startup
     javascript js nodejs sql">
-
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
+    
     <link href="https://blog.jameskoss.com/favicon.ico" rel="icon" type="image/x-icon">
-
+    
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div id='center'>
-      <div class='title'>James Koss</div>
+        <div class='title'>James Koss</div>
 
-      <div class='item item_hover'><a href='https://www.esoui.com/downloads/author-38690.html'>ESOUI Addons &amp; Support</a></div>
-      <div class='item item_hover'><a href='https://stackoverflow.com/users/2692437/james-koss'>Stackoverflow Activity</a></div>
+        <div class='item group'>
+            <span class='item_sub_title'>Open-Source</span>
+            
+            <div class='item_sub item_hover'><a href='https://www.esoui.com/downloads/author-38690.html'>ESOUI Addons &amp; Support</a></div>
+            
+            <div class='item_sub item_hover'><a href='https://github.com/microsoft/vscode/pull/96890'>Microsoft VS Code PR</a></div>
+            
+            <div class='item_sub item_hover'><a href='https://stackoverflow.com/users/2692437/james-koss'>Stackoverflow Activity</a></div>
+            
+            <div class='item_sub item_hover'><a href='https://github.com/phuein/UserScripts'>User Scripts</a></div>
+            
+            <div class='item_sub item_hover'><a href='https://greasyfork.org/en/scripts/27189-facebook-notifications-highlighter'>Facebook Notifications Highlighter</a></div>
+            
+            <div class='item_sub item_hover'><a href='https://userstyles.org/users/300931'>Stylish CSS</a></div>
 
-      <div class='item_sub item_hover'><a href='https://github.com/phuein/UserScripts'>User Scripts</a></div>
+            <div class='item_sub item_hover'><a href='https://userstyles.world/user/Phuen'>UserStyles.world CSS</a></div>
 
-      <div class='item_sub item_hover'><a href='https://greasyfork.org/en/scripts/27189-facebook-notifications-highlighter'>Facebook Notifications Highlighter</a></div>
-
-      <div class='item_sub item_hover'><a href='https://github.com/microsoft/vscode/pull/96890'>Microsoft VS Code PR</a></div>
-
-      <div class='item_sub item_hover'><a href='https://www.displayfusion.com/ScriptedFunctions/View/?ID=3b7bffb1-9496-49b1-aa52-b07ed8f39c4e'>DisplayFusion Scripted Function</a></div>
-
-      <div class='item group'>
+            <div class='item_sub item_hover'><a href='https://www.displayfusion.com/ScriptedFunctions/View/?ID=3b7bffb1-9496-49b1-aa52-b07ed8f39c4e'>DisplayFusion Scripted Function</a></div>
+        </div>
+        
+    <div class='item group'>
         <span class='item_sub_title'>Reddit Guides</span>
+        
         <div class='item_sub item_hover'><a href='https://www.reddit.com/r/elderscrollsonline/comments/bft011/bethesda_launcher_auto_killer/'>ESO Launcher Cleaner</a></div>
+        
         <div class='item_sub item_hover'><a href='https://www.reddit.com/r/RetroArch/comments/baximw/little_py_script_to_start_ra_by_controller/'>Controller Starts RetroArch</a></div>
+        
         <div class='item_sub item_hover'><a href='https://www.reddit.com/r/homesecurity/comments/9nwxwn/my_logitech_c615_ispy_task_scheduler_setup/'>Security System With Webcam</a></div>
-      </div>
-
-      <div class='item item_hover'><a href='https://userstyles.org/users/300931'>Stylish CSS Scripts</a></div>
-
-      <div class='item item_hover'><a href='https://www.deviantart.com/phuein/'>DeviantArt Contributions</a></div>
-      <div class='item item_hover'><a href='https://librivox.org/reader/9105'>Librivox Readings</a></div>
-
-      <div class='item_hover' id='email'><a href='mailto:phuein@gmail.com'>phuein@gmail.com</a></div>
     </div>
 
-    <script>
-    // Remove query from URL if FB injected theirs.
-    if ( location.search.includes('fbclid') ) {
-        window.history.pushState({}, document.title, window.location.pathname)
-    }
+    <div class='item group'>
+        <span class='item_sub_title'>Contributions</span>
+                
+        <div class='item_sub item_hover'><a href='https://www.deviantart.com/phuein/'>DeviantArt</a></div>
+        
+        <div class='item_sub item_hover'><a href='https://librivox.org/reader/9105'>Librivox Readings</a></div>
+    </div>
 
-    // Open links in a new tab.
-    $('#center a').attr('target', '_blank');
-    </script>
+    <div class='item_hover' id='email'><a href='mailto:phuein@gmail.com'>phuein@gmail.com</a></div>
+</div>
+
+<script>
+// Remove query from URL if FB injected theirs.
+if ( location.search.includes('fbclid') ) {
+    window.history.pushState({}, document.title, window.location.pathname)
+}
+
+// Open links in a new tab.
+$('#center a').attr('target', '_blank');
+</script>
+
 </body>
-
 </html>

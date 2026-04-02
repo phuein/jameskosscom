@@ -40,7 +40,7 @@ and (max-height: 400px) {
 
 body {
     user-select: none;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #0d0d0d;
     color: hsl(210deg 34% 71%);
 }

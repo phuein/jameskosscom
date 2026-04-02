@@ -101,7 +101,7 @@ body {
 
 #email a {
     color: hsl(208, 98%, 83%);
-    font-size: 0.9em;
+    font-size: 1em;
     transition: all 1.0s;
 }
 

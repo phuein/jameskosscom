@@ -20,6 +20,7 @@ and (max-height: 800px) {
         top: 10%;
         left: 50%;
         transform: translate(-50%);
+        font-size: 14px !important;
     }
 }
 
@@ -33,6 +34,7 @@ and (max-height: 400px) {
         top: 10%;
         left: 50%;
         transform: translate(-50%);
+        font-size: 14px !important;
     }
 }
 
